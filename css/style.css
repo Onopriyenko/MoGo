@@ -207,6 +207,10 @@ hr{
 	background-size: cover;
 	margin-bottom: 40px;
 }
+.sectionClients{
+	background: url(../img/clientsBg.jpg) center no-repeat;
+	background-size: cover;
+}
 .sectionHeader{
 	width: 100%;
 	min-width: 950px;
@@ -581,4 +585,100 @@ hr{
 }
 .worksCol{
 	flex: 1 1 0;
+}
+.worksItem{
+	position: relative;
+
+	background: linear-gradient(to bottom,#f38181,#fce38a);
+
+}
+.worksItem:hover .worksImg{
+	opacity: .1;
+}
+.worksItem:hover .worksInfo{
+	opacity: 1;
+}
+.worksImg{
+	max-width: 100%;
+	height: auto;
+	display: block;
+	transform: opacity .2s linear;
+}
+.worksInfo{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	transform: translate3d(0, -50%, 0);
+	text-align: center;
+	color: #fff;
+	opacity: 0;
+	transition: opacity .2s linear;
+
+}
+.worksTitle{
+	font-size: 14px;
+	text-transform: uppercase;
+
+	margin-bottom: 5px;
+	color:#fff;
+}
+.worksText{
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+
+}
+
+
+.clients{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 70px;
+}
+.clientsItem{
+	width: 50%;
+	position: relative;
+	padding: 0px 45px 0px 175px;
+	margin-bottom: 60px;
+
+}
+
+.clientsPhoto{
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 40px;
+	z-index: 1;
+
+
+}
+.clientsContent{
+
+}
+.clientsName{
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+.clientsProf{
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	color: #333;
+}
+.clientsText:before{
+	content: '';
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 15px 0;
+}
+.clientsText{
+	font-size: 15px;
+	color: #999;
 }
