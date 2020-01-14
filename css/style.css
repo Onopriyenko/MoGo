@@ -198,10 +198,14 @@ hr{
 .section{
 	padding: 80px 0;
 }
+.section.sectionGray{
+	background-color: #f8f8f8;
+}
 .sectionDevices{
 	padding-bottom: 0;
 	background:url('../img/devicesBg.jpg') center no-repeat;
 	background-size: cover;
+	margin-bottom: 40px;
 }
 .sectionHeader{
 	width: 100%;
@@ -343,7 +347,7 @@ hr{
 	color:#999;
 }
 /*      Services    */
-
+/*      Devices     */
 .devices{
 	width: 100%;
 	max-width: 600px;
@@ -362,4 +366,154 @@ hr{
 	bottom: -80px;
 	right: 0;
 	z-index: 1;
+}
+/*    /Devices    */
+
+
+.wedo{
+	display: flex;
+}
+.wedoItem{
+	width: 50%;
+}
+
+.acordionItem{
+	border:1px solid #e5e5e5;
+	margin-bottom: 10px;
+}
+.acordionItem.active
+.accordionContent{
+	display: block;
+
+}
+.acordionItem.active
+.accordionHeader{
+	border-bottom-color: #e5e5e5;
+}
+.acordionItem.active
+.accordionHeader:after{
+	transform: translateY(-50%) rotate(-45deg);
+}
+.accordionHeader{
+	cursor: pointer;
+
+	border: 1px solid transparent;
+	padding: 15px 20px 15px 60px;
+	position: relative;
+}
+.accordionHeader:after{
+	content: "";
+	display: block;
+
+	width: 16px;
+	height: 16px;
+	border-top: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	z-index: 1;
+	transform: translateY(-50%) rotate(135deg);
+
+}
+.accordionIcon{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	z-index: 1;
+	transform: translateY(-50%);
+
+}
+.accordionContent{
+	padding: 15px 20px;
+
+	display: none;
+
+	font-size: 15px;
+	color: #999;
+	font-weight: 300;
+	font-style: italic;
+
+}
+.accordionTitle{
+	font-size: 14px;
+	color: #333;
+	text-transform: uppercase;
+}
+
+/*     Reviews     */
+.reviews{
+	padding: 0px 110px;
+	position: relative;
+
+}
+.reviewsItem{
+	padding-left: 205px;
+	position: relative;
+
+}
+.reviewsImg{
+	width: 145px;
+	height: 145px;
+	border:2px solid #95e1d3;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.reviewsPhoto{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate3d(-50%,-50%,0);
+}
+.reviewsText{
+	font-size: 24px;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+	margin-bottom: 15px;
+}
+.reviewsAuthor{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 24px;
+	color: #333;
+}
+.reviewsAuthor:before{
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin-right: 10px;
+}
+
+.reviewBtn{
+	font-size: 0;
+	color: transparent;
+	position: absolute;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
+
+}
+.reviewBtn:after{
+	content: "";
+	display: block;
+
+	width: 16px;
+	height: 16px;
+	border-top: 2px solid #ccc;
+	border-left: 2px solid #ccc;
+}
+.reviewBtnPrev{
+	left: 0;
+	transform:rotate(-45deg);
+}
+.reviewBtnNext{
+	right: 0;
+	transform:rotate(135deg);
 }
