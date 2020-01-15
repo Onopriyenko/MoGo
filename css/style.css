@@ -211,6 +211,11 @@ hr{
 	background: url(../img/clientsBg.jpg) center no-repeat;
 	background-size: cover;
 }
+.sectionMap{
+	background: url(../img/mapBg.jpg) center no-repeat;
+	background-size: cover;
+	margin: 40px 0;
+}
 .sectionHeader{
 	width: 100%;
 	min-width: 950px;
@@ -681,4 +686,301 @@ hr{
 .clientsText{
 	font-size: 15px;
 	color: #999;
+}
+
+/*-----Blog------*/
+.blog{
+	display: flex;
+	justify-content: space-between;
+}
+.blogItem{
+	width: 31%;
+}
+.blogHeader{
+	position: relative;
+	margin-bottom: 14px;
+}
+.blogPhoto{
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+.blogdate{
+	padding: 10px 20px;
+	position: absolute;
+	bottom: 10px;
+	left: -10px;
+	z-index: 1;
+	background-color: #95e1d3;
+	font-style: italic;
+	font-size: 15px;
+	color: #fff;
+	font-weight: 300;
+	text-align: center;
+
+}
+.blogDay{
+	line-height: 1;
+	font-size: 30px;
+	font-weight: 700;
+	font-style: normal;
+
+}
+.blogContent{
+	margin-bottom: 10px;
+}
+.blogTitle{
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #333;
+	margin-bottom: 10px;
+
+}
+.blogTitle a{
+	color:inherit;
+	text-decoration: none;
+
+
+}
+.blogTitle a:hover{
+	text-decoration: underline;
+
+}
+.blogText{
+	font-size: 15px;
+	color: #999;
+}
+.blogFooter{
+	color: #999;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: italic;
+	padding-top: 14px;
+	border-top: 1px solid #e5e5e5;
+}
+.blogStat{
+
+}
+.blogStatItem{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10px;
+}
+.blogStatItem i{
+	color: #95e1d3;
+	padding-right: 5px;
+}
+/*-----/Blog------*/
+/*-----Map------*/
+.map{
+	text-align: center;
+
+}
+.mapTitle{
+	font-size: 24px;
+	color: #f38181;
+	font-weight: 700;
+}
+.mapTitle a{
+	color: inherit;
+	text-decoration: none;
+	text-transform: uppercase;
+
+
+}
+.mapTitle a:hover{
+	text-decoration: underline;
+
+}
+.mapTitle:after{
+	content: '';
+	display: block;
+	width: 60px;
+	height: 3px;
+	background-color: #f38181;
+	margin: 15px auto 0;
+}
+/*-----/Map------*/
+
+/*-----Footer----*/
+.footer{
+	padding-top: 65px;
+	background-color: #fff;
+}
+.colFirst{
+	width: 40%;
+}
+.colSecond{
+	width: 29%;
+}
+.colThird{
+	width: 22%;
+}
+.footerInner{
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+.footerLogo{
+	margin-bottom: 30px;
+	color: #ccc;
+	font-size: 46px;
+	font-weight: 700;
+}
+.footerText{
+	margin-bottom: 30px;
+	font-size: 15px;
+	color: #999;
+
+}
+.footerSocial{
+	margin-bottom: 25px;
+}
+.footerSocialHeader{
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 15px;
+}
+.footerSocialHeader b{
+	font-size: 18px;
+}
+.footerSocialContent{
+	padding-top: 15px;
+	font-size: 15px;
+	color: #999;
+	font-weight: 300;
+	font-style: italic;
+
+}
+.footerSocialContent a{
+	color: #95e1d3;
+	font-size: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.footerTitle{
+	margin: 30px 0;
+	font-size: 14px;
+	color: #333;
+	text-transform: uppercase;
+
+}
+.subscribe{
+	width: 100%;
+	max-width: 380px;
+	display: flex;
+
+}
+.subInput{
+	border-right: 0;
+	width: 60%;
+	padding: 12px;
+	height: 40px;
+	background:#fff;
+	border:1px solid #e7e7e7;
+	font-size: 15px;
+	color: #333;
+	font-style: italic;
+	font-weight: 300;
+	font-family: 'Montserrat',sans-serif;
+	line-height: 1.1;
+}
+.subInput:focus{
+	outline: 0;
+	border-color: #95e1d3;
+}
+.subInput::placeholder{
+	color: #000;
+	font-weight: 500;
+}
+.subBtn:hover{
+	background-color: #74c7b8;
+}
+.subBtn{
+	width: 40%;
+	line-height: 1.1;
+	padding: 12px 30px;
+	font-family: 'Montserrat',sans-serif;
+	height: 40px;
+	background-color: #95e1d3;
+	cursor: pointer;
+	border: 0;
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+/*----/Footer----*/
+
+
+/*blogs*/
+.blogsItem{
+	display: flex;
+	margin-bottom: 30px;
+	align-items: center;
+}
+.blogsImg{
+	width: 120px;
+	height: 80px;
+}
+.blogsContent{
+	padding-left: 20px;
+}
+.blogsTitle{
+	color: #333;
+	font-size: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 1.5;
+	margin-bottom: 5px;
+
+}
+.blogsTitle:hover{
+	text-decoration: underline;
+
+}
+.blogsDate{
+	font-size: 13px;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+}
+
+/*instagram*/
+
+.instagram{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.instagramItem{
+	width: 32.33333333%;
+	border-bottom: 1px solid #fff;
+}
+.instagramItem img{
+	display: block;
+
+}
+.instagramText{
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	font-weight: 300;
+	font-style: italic;
+	color: #999;
+	margin-top: 20px;
+}
+
+.copyright{
+	border-top: 1px solid #e5e5e5;
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0;
+
+}
+.copyright span{
+	color: #f38181;
 }
